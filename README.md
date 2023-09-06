@@ -1,5 +1,5 @@
 *** Personal Portfolio Rubric ***
-must include:
+must include: ...
  
 # Routing
 - Include linking to an external site. 
