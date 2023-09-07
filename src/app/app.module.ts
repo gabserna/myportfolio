@@ -1,40 +1,44 @@
+//modules here
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CustomPipe } from './custom.pipe';
+
+// components here
+import { AboutmeComponent } from './aboutme/aboutme.component';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
-import { CustomPipe } from './custom.pipe';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
-import {MatDividerModule} from '@angular/material/divider';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { SearchComponent } from './search/search.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { TopnavComponent } from './topnav/topnav.component';
-import { AboutmeComponent } from './aboutme/aboutme.component';
-import { SearchComponent } from './search/search.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    ProjectsComponent,
+    AboutmeComponent,
     ContactComponent,
     FeedbackComponent,
-    CustomPipe,
+    HomeComponent,
+    ProjectsComponent,
+    SearchComponent,
     SidenavComponent,
     TopnavComponent,
-    AboutmeComponent,
-    SearchComponent,
+    CustomPipe,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,6 @@ import { SearchComponent } from './search/search.component';
     MatButtonModule,
     MatIconModule,
     MatFormFieldModule,
-
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
