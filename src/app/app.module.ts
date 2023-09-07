@@ -10,8 +10,17 @@ import { CustomPipe } from './custom.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { TopnavComponent } from './topnav/topnav.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -22,6 +31,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     FeedbackComponent,
     CustomPipe,
+    SidenavComponent,
+    TopnavComponent,
+    AboutmeComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +43,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
+    MatIconModule,
     MatFormFieldModule,
+
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
