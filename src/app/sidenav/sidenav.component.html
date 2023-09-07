@@ -1,27 +1,41 @@
 <mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened>
-        <mat-list>
-            <mat-list-item>
-                <button routerLink="/about" color="primary" mat-raised-button>About Me</button>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-                <button routerLink="/search" color="primary"  mat-raised-button>Search</button>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-                <button routerLink="/portfolio" color="primary" mat-raised-button>Portfolio</button>
-            </mat-list-item>
-        </mat-list>
-        <mat-list role="list">
+  <mat-drawer mode="side" opened>
+    <mat-list>
+      <mat-list-item>
+        <button routerLink="/aboutme" color="primary" mat-raised-button>
+          About Me
+        </button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <button routerLink="/search" color="primary" mat-raised-button>
+          Search
+        </button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <button routerLink="/projects" color="primary" mat-raised-button>
+          Portfolio
+        </button>
+      </mat-list-item>
 
-            <mat-list-item role="listitem">Item 1</mat-list-item>
-            <mat-list-item role="listitem">Item 2</mat-list-item>
-            <mat-list-item role="listitem">Item 3</mat-list-item>
-          </mat-list>
-    </mat-drawer>
-    <mat-drawer-content>
-        Main content
-        <router-outlet></router-outlet>
-    </mat-drawer-content>
+
+      <mat-list-item>
+        <button routerLink="/contact" color="primary" mat-raised-button>
+          Contact Me
+        </button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+    </mat-list>
+    <mat-list role="list">
+      <mat-list-item role="listitem">Item 1</mat-list-item>
+      <mat-list-item role="listitem">Item 2</mat-list-item>
+      <mat-list-item role="listitem">Item 3</mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    Main content
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
 </mat-drawer-container>
