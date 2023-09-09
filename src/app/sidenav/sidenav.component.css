@@ -8,3 +8,8 @@
   button {
     padding: 6px;
   }
+
+  mat-list button {
+    width: 100%;
+    text-align: left;
+  }
