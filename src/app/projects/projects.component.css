@@ -19,13 +19,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #bfdbf1;
-    border-radius: 15px;
+    /* background-color: #bfdbf1;
+    border-radius: 15px; */
   }
   
   .project {
     width: 20vw;
-    height: 350px;
+    height: 30vh;
     padding: 0.5em;
     display: grid;
     place-items: center;
@@ -34,16 +34,16 @@ body {
     overflow: hidden;
   }
   
-  .iframeWrapper {
+  /* .iframeWrapper {
     width: 100%;
     height: 100%;
     position: relative;
     height: 0;
-  }
+  } */
   
   img {
-    width: 60%;
-    height: 100%;
+    width: 30%;
+    height: 50%;
     object-fit: contain;
     top: 0;
     left: 0;
