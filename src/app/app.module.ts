@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
-
 //modules here
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,6 +16,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CustomPipe } from './custom.pipe';
 
+
 // components here
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactComponent } from './contact/contact.component';
@@ -27,6 +27,9 @@ import { SearchComponent } from './search/search.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { TopnavComponent } from './topnav/topnav.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { CarouselComponent } from './carousel/carousel.component';
+// import { MatCarouselModule } from '@magloft/material-carousel';
+import { CarouselSlideComponent } from './carousel-slide/carousel-slide.component';
 
 
 @NgModule({
@@ -41,6 +44,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     SidenavComponent,
     TopnavComponent,
     CustomPipe,
+    CarouselComponent,
+    CarouselSlideComponent
   ],
   imports: [
     BrowserModule,
@@ -51,11 +56,12 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     MatButtonModule,
     MatIconModule,
     MatFormFieldModule,
+    MatButtonModule,
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
     MatDividerModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
