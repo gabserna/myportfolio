@@ -1,14 +1,13 @@
 body {
     margin: 0 auto;
-    width: 90%;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    width: 90%;  
   }
   
   h1, h4 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 0.5em 0 0.5em 0;
+    /* padding: 0.5em 0 0.5em 0; */
     margin: 0;
   }
   
