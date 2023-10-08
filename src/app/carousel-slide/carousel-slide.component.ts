@@ -13,7 +13,7 @@ import { MatCarouselSlide } from './carousel-slide';
 @Component({
   selector: 'app-carousel-slide',
   templateUrl: './carousel-slide.component.html',
-  styleUrls: ['./carousel-slide.component.scss']
+  styleUrls: ['./carousel-slide.component.css']
 })
 export class CarouselSlideComponent
   implements ListKeyManagerOption, MatCarouselSlide, OnInit {
