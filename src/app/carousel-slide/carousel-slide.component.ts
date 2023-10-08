@@ -1,15 +1,7 @@
 import { ListKeyManagerOption } from '@angular/cdk/a11y';
-import {
-  Component,
-  Input,
-  OnInit,
-  TemplateRef,
-  ViewChild
-} from '@angular/core';
+import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
-
 import { MatCarouselSlide } from './carousel-slide';
-
 @Component({
   selector: 'app-carousel-slide',
   templateUrl: './carousel-slide.component.html',
@@ -20,7 +12,7 @@ export class CarouselSlideComponent
   @Input() public image!: SafeStyle;
   @Input() public overlayColor = '#00000040';
   @Input() public hideOverlay = false;
-  @Input() public disabled = false; // implements ListKeyManagerOption
+  @Input() public disabled = false;
 
   @ViewChild(TemplateRef)
   public templateRef!: TemplateRef<any>;
