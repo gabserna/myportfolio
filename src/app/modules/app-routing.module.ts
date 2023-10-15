@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutmeComponent } from './aboutme/aboutme.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { SearchComponent } from './search/search.component';
-import { ContactComponent } from './contact/contact.component';
-import { FeedbackComponent } from './feedback/feedback.component';
+import { HomeComponent } from '../components/home/home.component';
+import { AboutmeComponent } from '../components/aboutme/aboutme.component';
+import { ProjectsComponent } from '../components/projects/projects.component';
+import { SearchComponent } from '../components/search/search.component';
+import { ContactComponent } from '../components/contact/contact.component';
+import { FeedbackComponent } from '../components/feedback/feedback.component';
 // import { ExternalLinkComponent } from './external-link.component';
 
 const routes: Routes = [

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 //modules here
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './modules/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
@@ -18,18 +18,18 @@ import { CustomPipe } from './custom.pipe';
 
 
 // components here
-import { AboutmeComponent } from './aboutme/aboutme.component';
-import { ContactComponent } from './contact/contact.component';
-import { FeedbackComponent } from './feedback/feedback.component';
-import { HomeComponent } from './home/home.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { SearchComponent } from './search/search.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { TopnavComponent } from './topnav/topnav.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FeedbackComponent } from './components/feedback/feedback.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { SearchComponent } from './components/search/search.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { TopnavComponent } from './components/topnav/topnav.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { CarouselSlideComponent } from './components/carousel-slide/carousel-slide.component';
 // import { MatCarouselModule } from '@magloft/material-carousel';
-import { CarouselSlideComponent } from './carousel-slide/carousel-slide.component';
 
 
 @NgModule({
