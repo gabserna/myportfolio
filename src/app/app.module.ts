@@ -15,6 +15,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CustomPipe } from './custom.pipe';
+import { MaterialModule } from './modules/material.module';
 
 
 // components here
@@ -23,7 +24,6 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { SearchComponent } from './components/search/search.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -41,7 +41,6 @@ import { HeaderComponent } from './components/header/header.component';
     FeedbackComponent,
     HomeComponent,
     ProjectsComponent,
-    SearchComponent,
     SidenavComponent,
     TopnavComponent,
     CustomPipe,
@@ -64,6 +63,7 @@ import { HeaderComponent } from './components/header/header.component';
     MatListModule,
     MatDividerModule,
     MatSlideToggleModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
