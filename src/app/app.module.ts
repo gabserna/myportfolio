@@ -27,10 +27,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { CarouselComponent } from './components/carousel/carousel.component';
-import { CarouselSlideComponent } from './components/carousel-slide/carousel-slide.component';
 import { HeaderComponent } from './components/header/header.component';
-// import { MatCarouselModule } from '@magloft/material-carousel';
 
 
 @NgModule({
@@ -44,8 +41,6 @@ import { HeaderComponent } from './components/header/header.component';
     SidenavComponent,
     TopnavComponent,
     CustomPipe,
-    CarouselComponent,
-    CarouselSlideComponent,
     HeaderComponent
   ],
   imports: [

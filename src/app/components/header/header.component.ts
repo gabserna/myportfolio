@@ -10,8 +10,6 @@ export class HeaderComponent implements OnInit {
   currentDate: Date = new Date();
   currentTime: Date = new Date();
 
-  constructor() { }
-
   ngOnInit(): void {
     this.updateTime();
     setInterval(() => this.updateTime(), 1000);
