@@ -29,6 +29,7 @@ import { TopnavComponent } from './components/topnav/topnav.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarouselSlideComponent } from './components/carousel-slide/carousel-slide.component';
+import { HeaderComponent } from './components/header/header.component';
 // import { MatCarouselModule } from '@magloft/material-carousel';
 
 
@@ -45,7 +46,8 @@ import { CarouselSlideComponent } from './components/carousel-slide/carousel-sli
     TopnavComponent,
     CustomPipe,
     CarouselComponent,
-    CarouselSlideComponent
+    CarouselSlideComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
