@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 
+
 @NgModule({
   declarations: [],
   imports: [
@@ -46,7 +47,6 @@ import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
     MatProgressBarModule,
     MatInputModule,
     MatExpansionModule,
-    MatAccordion
   ],
 })
 export class MaterialModule {}
