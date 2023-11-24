@@ -1,0 +1,17 @@
+.carousel-slide {
+  width: 100%;
+  padding-top: 56.25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-slide-overlay {
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.carousel-slide-content {
+  width: 100%;
+  padding-top: 100%;
+}
