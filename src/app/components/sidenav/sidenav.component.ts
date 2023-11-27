@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class SidenavComponent {
   
-  
+  openLink(url: string) {
+    window.open(url, '_blank');
+  }
 
 }

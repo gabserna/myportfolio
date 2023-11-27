@@ -21,7 +21,6 @@ import { MaterialModule } from './modules/material.module';
 // components here
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { FeedbackComponent } from './components/feedback/feedback.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
@@ -35,7 +34,6 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     AboutmeComponent,
     ContactComponent,
-    FeedbackComponent,
     HomeComponent,
     ProjectsComponent,
     SidenavComponent,

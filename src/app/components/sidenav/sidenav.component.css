@@ -3,7 +3,11 @@
   height: 80%;
   /* margin: 10px; */
   /* border: 1px solid #555; */
+  background-color: black;
+  color: #00ff41;
 }
+
+
 .social {
   display: flex;
   flex-direction: row;
