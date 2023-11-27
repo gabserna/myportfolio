@@ -1,37 +1,24 @@
-<mat-toolbar>
-        
-  <mat-list>
-    <mat-list-item>
-      <button routerLink="/home" mat-raised-button>Home</button>
-    </mat-list-item>
-    <mat-divider></mat-divider>
+<div class="toolbar">
 
-    <mat-list-item>
-      <button routerLink="/aboutme" mat-raised-button>About</button>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-    
-    <mat-list-item>
-      <button routerLink="/projects" mat-raised-button>Work</button>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-
-    <mat-list-item>
-      <button routerLink="/resume" mat-raised-button>Resume</button>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-    
-    <mat-list-item>
-      <button routerLink="/contact" mat-raised-button>Contact</button>
-    </mat-list-item>
-  </mat-list>
-
-  <button class="x" (click)="('')">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-      <path d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680v400Zm0 140 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"/>
-    </svg>
-  </button>
+  <mat-toolbar>
+    <button routerLink="/home" mat-button>Home</button>
+    <button routerLink="/aboutme" mat-button>About</button>
+    <button routerLink="/projects" mat-button>Work</button>
+    <button routerLink="/resume" mat-button>Resume</button>
+    <button routerLink="/contact" mat-button>Contact</button>
+  </mat-toolbar>
   
+  <button class="darkMode" (click)="('')">
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24"
+    viewBox="0 -960 960 960"
+    width="24"
+    >
+    <path
+    d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680v400Zm0 140 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"
+    />
+  </svg>
+</button>
 
-</mat-toolbar>
-  
+</div>

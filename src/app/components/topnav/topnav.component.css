@@ -1,18 +1,27 @@
-mat-toolbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-mat-list {
+.toolbar {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+mat-toolbar {
+  background-color: #112240;
 }
 
 button {
   cursor: pointer;
   border: none;
+  color: #ccd6f6 !important;
+}
+button:hover {
+  background-color: #ccd6f6;
+  color: #112240 !important;
 }
 
 svg {
   fill: blue;
+}
+
+.darkMode {
+  padding-right: 2rem;
+  background-color: #112240;
 }

@@ -1,50 +1,30 @@
 .example-container {
-  width: auto;
-  height: 80%;
-  /* margin: 10px; */
-  /* border: 1px solid #555; */
+  width: 100%;
+  height: 90%;
   background-color: black;
   color: #00ff41;
 }
-
-
-
-
-mat-icon-button .social_icon {
-  width: 20px;
-  padding: 0;
-  margin: 0;
-  border: 2px solid blue !important;
+#sider {
+  background-color: #112240;
 }
-
-mat-list button {
-  width: 100%;
-  text-align: left;
-}
-
-
-
-
-
 .social {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
+  margin-top: 30rem;
 }
 .social-button {
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
-    /* border-radius: 50%; */
     margin: 5px;
   }
-  
   .social-button svg {
-    /* fill: #007bff; */
-    fill: #007bff;
+    fill: #ccd6f6;
   }
-  
-  .social-button:hover {
-    background-color: #fff;
+
+  svg:hover {
+    background-color: #112240;
+    color: #ccd6f6;
   }
