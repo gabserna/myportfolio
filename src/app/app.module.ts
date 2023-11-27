@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 //modules here
 import { AppRoutingModule } from './modules/app-routing.module';
@@ -27,6 +28,9 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { HeaderComponent } from './components/header/header.component';
+import { MatrixEffectComponent } from './components/home/matrix-effect/matrix-effect.component';
+import { ResumeComponent } from './components/aboutme/resume/resume.component';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 
 @NgModule({
@@ -39,7 +43,9 @@ import { HeaderComponent } from './components/header/header.component';
     SidenavComponent,
     TopnavComponent,
     CustomPipe,
-    HeaderComponent
+    HeaderComponent,
+    MatrixEffectComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
@@ -56,9 +62,11 @@ import { HeaderComponent } from './components/header/header.component';
     MatListModule,
     MatDividerModule,
     MatSlideToggleModule,
-    MaterialModule
+    MaterialModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+platformBrowserDynamic().bootstrapModule(AppModule);

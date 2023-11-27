@@ -8,28 +8,7 @@
 }
 
 
-.social {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
 
-.social button {
-  padding: 6px;
-  cursor: pointer;
-  width: 33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-}
-
-button svg {
-  height: 2rem;
-  width: 2rem;
-  fill: #3f51b5;     /* svg color */
-}
 
 mat-icon-button .social_icon {
   width: 20px;
@@ -42,3 +21,30 @@ mat-list button {
   width: 100%;
   text-align: left;
 }
+
+
+
+
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.social-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* border-radius: 50%; */
+    margin: 5px;
+  }
+  
+  .social-button svg {
+    /* fill: #007bff; */
+    fill: #007bff;
+  }
+  
+  .social-button:hover {
+    background-color: #fff;
+  }
