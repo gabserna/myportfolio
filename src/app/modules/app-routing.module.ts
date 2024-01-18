@@ -5,11 +5,8 @@ import { AboutmeComponent } from '../components/aboutme/aboutme.component';
 import { ProjectsComponent } from '../components/projects/projects.component';
 import { ContactComponent } from '../components/contact/contact.component';
 import { ResumeComponent } from '../components/aboutme/resume/resume.component';
-// import { ExternalLinkComponent } from './external-link.component';
 
 const routes: Routes = [
-  // { path: '', component: HomeComponent },
-  // { path: 'external', component: ExternalLinkComponent },
   { path: 'home', component: HomeComponent },
   { path: 'aboutme', component: AboutmeComponent },
   { path: 'projects', component: ProjectsComponent },
