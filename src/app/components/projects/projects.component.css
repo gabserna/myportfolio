@@ -90,3 +90,10 @@ body {
     border-radius: 50%;
   }
   
+  #lang {
+    height: 1.5rem;
+    padding: 0 8px 0 8px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 10px;
+  }
