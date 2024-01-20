@@ -3,20 +3,38 @@
   
   <div class="embedded">
     
-    <mat-card class="card" onclick="window.open('https://gabserna.github.io/golf-score/', '_blank');">
+    <mat-card class="card">
       <mat-card-header>
         <div mat-card-avatar [ngStyle]="{'background-image': 'url(../../assets/img/card1.jpg)'}" class="card-avatar" alt="project"></div>
-        <mat-card-title>Golf Score card</mat-card-title>
-        <p>icons git & link</p>
+        
+        <mat-card-title>Golf Score card
+          <div class="svgs">
+            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+            stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
+            onclick="window.open('https://github.com/gabserna/golf-score/', '_blank');">
+            <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 
+            5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 
+            5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+          </path>
+          </svg>
+        
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+          stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"
+          onclick="window.open('https://gabserna.github.io/golf-score/', '_blank');">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+        </div>
+      </mat-card-title>
 
         <mat-card-subtitle>api request</mat-card-subtitle>
       </mat-card-header>
       <mat-divider> </mat-divider>
-      <mat-card-content>
-        <button id="lang" mat-flat-button>node</button>
-        <button id="lang" mat-flat-button>JavaScript</button>
-        <button id="lang" mat-flat-button>xxxxxx</button>
-      </mat-card-content>
+      <mat-card-actions align="end">
+        <button id="lang" mat-button>Node.js</button>
+        <button id="lang" mat-button>JavaScript</button>
+      </mat-card-actions>
     </mat-card>
     
     <mat-card class="card" onclick="window.open('https://gabserna.github.io/newsApp/', '_blank');">
@@ -26,11 +44,11 @@
         <mat-card-subtitle>api request with auth</mat-card-subtitle>
       </mat-card-header>
       <mat-divider> </mat-divider>
-      <mat-card-content>
-        <button id="lang" mat-flat-button>Angular</button>
-        <button id="lang" mat-flat-button>TypeScript</button>
-        <button id="lang" mat-flat-button>Firebase</button>
-      </mat-card-content>
+      <mat-card-actions align="end">
+        <button id="lang" mat-button>Angular</button>
+        <button id="lang" mat-button>TypeScript</button>
+        <button id="lang" mat-button>Firebase</button>
+      </mat-card-actions>
     </mat-card>
     
     <mat-card class="card" onclick="window.open('https://gabserna.github.io/expense-tracker/', '_blank');">
@@ -40,11 +58,11 @@
         <mat-card-subtitle>crud app</mat-card-subtitle>
       </mat-card-header>
       <mat-divider> </mat-divider>
-      <mat-card-content>
-        <button id="lang" mat-flat-button>Angular</button>
-        <button id="lang" mat-flat-button>TypeScript</button>
-        <button id="lang" mat-flat-button>Firebase</button>
-      </mat-card-content>
+      <mat-card-actions align="end">
+        <button id="lang" mat-button>Angular</button>
+        <button id="lang" mat-button>TypeScript</button>
+        <button id="lang" mat-button>Firebase</button>
+      </mat-card-actions>
     </mat-card>
     
     <mat-card class="card" onclick="window.open('https://gabserna.github.io/todo-list/', '_blank');">
@@ -54,11 +72,11 @@
         <mat-card-subtitle>crud app</mat-card-subtitle>
       </mat-card-header>
       <mat-divider> </mat-divider>
-      <mat-card-content>
-        <button id="lang" mat-flat-button>Angular</button>
-      <button id="lang" mat-flat-button>TypeScript</button>
-      <button id="lang" mat-flat-button>Firebase</button>
-      </mat-card-content>
+      <mat-card-actions align="end">
+        <button id="lang" mat-button>Angular</button>
+      <button id="lang" mat-button>TypeScript</button>
+      <button id="lang" mat-button>Firebase</button>
+      </mat-card-actions>
     </mat-card>
 
     <mat-card class="card" onclick="window.open('https://gabserna.github.io/301A-SASS-Project/', '_blank');">
@@ -68,11 +86,11 @@
           <mat-card-subtitle>dev skills mockup</mat-card-subtitle>
         </mat-card-header>
         <mat-divider> </mat-divider>
-        <mat-card-content>
-          <button id="lang" mat-flat-button>Angular</button>
-        <button id="lang" mat-flat-button>TypeScript</button>
-        <button id="lang" mat-flat-button>Firebase</button>
-      </mat-card-content>
+        <mat-card-actions align="end">
+          <button id="lang" mat-button>Angular</button>
+        <button id="lang" mat-button>TypeScript</button>
+        <button id="lang" mat-button>Firebase</button>
+      </mat-card-actions>
     </mat-card>
     
     <mat-card class="card" onclick="window.open('https://gabserna.github.io/401A-Bootstrap-project/Desktop/401A-Bootstrap-project/index.html', '_blank');">
@@ -82,11 +100,11 @@
         <mat-card-subtitle>carousel mockup</mat-card-subtitle>
       </mat-card-header>
       <mat-divider> </mat-divider>
-      <mat-card-content>
-        <button id="lang" mat-flat-button>Angular</button>
-      <button id="lang" mat-flat-button>TypeScript</button>
-      <button id="lang" mat-flat-button>Firebase</button>
-      </mat-card-content>
+      <mat-card-actions align="end">
+        <button id="lang" mat-button>Angular</button>
+      <button id="lang" mat-button>TypeScript</button>
+      <button id="lang" mat-button>Firebase</button>
+      </mat-card-actions>
     </mat-card>
     
     
@@ -97,11 +115,11 @@
           <mat-card-subtitle>crud app</mat-card-subtitle>
         </mat-card-header>
         <mat-divider> </mat-divider>
-        <mat-card-content>
-          <button id="lang" mat-flat-button>Angular</button>
-        <button id="lang" mat-flat-button>TypeScript</button>
-        <button id="lang" mat-flat-button>Firebase</button>
-        </mat-card-content>
+        <mat-card-actions align="end">
+          <button id="lang" mat-button>Angular</button>
+        <button id="lang" mat-button>TypeScript</button>
+        <button id="lang" mat-button>Firebase</button>
+        </mat-card-actions>
       </mat-card>
 
 
@@ -112,11 +130,11 @@
           <mat-card-subtitle>menu mockup</mat-card-subtitle>
         </mat-card-header>
         <mat-divider> </mat-divider>
-        <mat-card-content>
-          <button id="lang" mat-flat-button>Angular</button>
-          <button id="lang" mat-flat-button>TypeScript</button>
-          <button id="lang" mat-flat-button>Firebase</button>
-        </mat-card-content>
+        <mat-card-actions align="end">
+          <button id="lang" mat-button>Angular</button>
+          <button id="lang" mat-button>TypeScript</button>
+          <button id="lang" mat-button>Firebase</button>
+        </mat-card-actions>
       </mat-card>
 
 
@@ -127,25 +145,25 @@
           <mat-card-subtitle>CAPSTONE</mat-card-subtitle>
         </mat-card-header>
         <mat-divider> </mat-divider>
-        <mat-card-content>
-          <button id="lang" mat-flat-button>Next.js</button>
-        <button id="lang" mat-flat-button>TypeScript</button>
-        <button id="lang" mat-flat-button>Tailwind</button>
-        </mat-card-content>
+        <mat-card-actions align="end">
+          <button id="lang" mat-button>Next.js</button>
+        <button id="lang" mat-button>TypeScript</button>
+        <button id="lang" mat-button>Tailwind</button>
+        </mat-card-actions>
       </mat-card>
       
       <mat-card class="card" onclick="window.open('https://gabserna.github.io/W6D3-Grid-project/', '_blank');">
         <mat-card-header>
           <div mat-card-avatar [ngStyle]="{'background-image': 'url(../../assets/img/card0.jpg)'}" class="card-avatar" alt="project"></div>
-          <mat-card-title>simple grid game</mat-card-title>
+          <mat-card-title>grid game</mat-card-title>
           <mat-card-subtitle>REMOVE????</mat-card-subtitle>
         </mat-card-header>
     <mat-divider> </mat-divider>
-        <mat-card-content>
-          <button id="lang" mat-flat-button>Angular</button>
-        <button id="lang" mat-flat-button>TypeScript</button>
-        <button id="lang" mat-flat-button>Firebase</button>
-        </mat-card-content>
+        <mat-card-actions align="end">
+          <button id="lang" mat-button>Angular</button>
+        <button id="lang" mat-button>TypeScript</button>
+        <button id="lang" mat-button>Firebase</button>
+        </mat-card-actions>
       </mat-card>
 
     </div>
