@@ -66,14 +66,23 @@ img {
 
 .card {
   width: 320px;
-  height: 200px;
+  height: 150px;
   background-color: #001523;
   border: 1px solid transparent;
   border-radius: 15px;
-  padding: 10px;
   margin: 20px;
   display: flex;
   justify-content: space-around;
+}
+
+mat-card-header, .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card-footer {
+  padding-bottom: 2em;
 }
 
 mat-card-subtitle {
@@ -129,7 +138,7 @@ mat-card-title {
 }
 
 svg {
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -141,11 +150,9 @@ svg:hover {
   gap: 7px;
   display: flex;
   justify-content: center;
-  /* align-items: end; */
   flex-wrap: wrap;
   margin-top: 15px;
   cursor: text;
-  /* border: 2px solid red; */
 }
 
 span {

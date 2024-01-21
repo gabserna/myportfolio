@@ -5,14 +5,19 @@ h1 {
 
 form {
     margin: 0 auto;
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #f3f3f3;
+    background-color: #001523;
     border-radius: 10px;
     margin-top: 20px;
     box-shadow: 0px 0px 10px 0px #000000;
+}
+
+button {
+    background-color: #001523!important;
+    color: #bbb !important;
 }
 
 #message {
