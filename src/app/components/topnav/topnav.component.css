@@ -4,16 +4,17 @@
   justify-content: space-between;
 }
 mat-toolbar {
-  background-color: #112240;
+  /* background-color: #112240; */
+  background-color: #001523;
 }
 
 button {
   cursor: pointer;
   border: none;
-  color: #ccd6f6 !important;
+  color: #27fb6b !important;
 }
 button:hover {
-  background-color: #ccd6f6;
+  background-color: #c1cae9;
   color: #112240 !important;
 }
 
