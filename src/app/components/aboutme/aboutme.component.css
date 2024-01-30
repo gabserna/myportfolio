@@ -1,3 +1,27 @@
+
+.aboutContainer, img {
+    margin: 1rem 3rem;
+    background-color: #001523;
+    color: #27fb6b;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+section {
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: italic;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    line-height: 1.5;
+    width: 55%;
+}
+  
 img {
     width: 100px;
-}
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  svg {
+    width: 50px;
+  }

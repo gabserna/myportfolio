@@ -75,7 +75,8 @@ img {
   justify-content: space-around;
 }
 
-mat-card-header, .avatar {
+mat-card-header,
+.avatar {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -5,7 +5,7 @@
   color: #00ff41;
 }
 #sider {
-  background-color: #112240;
+  background-color: #001523;
 }
 .social {
   display: flex;
@@ -21,10 +21,11 @@
     margin: 5px;
   }
   .social-button svg {
-    fill: #ccd6f6;
+    fill: #27fb6b;
   }
 
   svg:hover {
-    background-color: #112240;
-    color: #ccd6f6;
+    background-color: #001523;
+    /* color: #ccd6f6; */
+    color: red;
   }
