@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-matrix-effect',
-  template: '<canvas #matrixCodeElement width="500" height="200"></canvas>',
+  template: '<canvas #matrixCodeElement></canvas>',
 })
 export class MatrixEffectComponent implements AfterViewInit {
   @ViewChild('matrixCodeElement') matrixCodeElement!: ElementRef;
@@ -12,6 +12,7 @@ export class MatrixEffectComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.generateChars(); // Generate an array of Unicode characters
     this.createMatrixEffect(); // Initialize and start the Matrix code rain effect
+    this.handleResize(); // function to call resize event
   }
 
   private generateChars() {
@@ -45,20 +46,25 @@ export class MatrixEffectComponent implements AfterViewInit {
     const canvas: HTMLCanvasElement = this.matrixCodeElement.nativeElement;
     const ctx = canvas.getContext('2d')!;
 
-    const w = (canvas.width = document.body.offsetWidth);
-    const h = (canvas.height = document.body.offsetHeight);
-    const cols = Math.floor(w / 20) + 1;
+    this.handleResize();
+
+    // const w = (canvas.width = document.body.offsetWidth);
+    // const h = (canvas.height = document.body.offsetHeight);
+
+    const cols = Math.floor(canvas.width / 20 ) + 1;
     const ypos = Array(cols).fill(0); // Initialize an array to store the vertical position of each column
 
+    console.log('Altura del lienzo:', canvas.height);
+
     ctx.fillStyle = '#000';
-    ctx.fillRect(0, 0, w, h); // Fill the canvas with a black background
+    ctx.fillRect(0, 0, canvas.width, canvas.height); // Fill the canvas with a black background
 
     const matrix = () => {
       ctx.fillStyle = '#0001';
-      ctx.fillRect(0, 0, w, h); // Clear the canvas with a slightly transparent black background
+      ctx.fillRect(0, 0, canvas.width, canvas.height); // Clear the canvas with a slightly transparent black background
 
       ctx.fillStyle = '#0f0';
-      ctx.font = '15pt monospace';
+      ctx.font = '14pt monospace';
 
       ypos.forEach((y, ind) => {
         const text = this.getRandomChar();
@@ -70,5 +76,21 @@ export class MatrixEffectComponent implements AfterViewInit {
     };
 
     setInterval(matrix.bind(this), 50); // Set up an interval to continuously update the Matrix effect
+  }
+
+
+  private handleResize() {
+    const canvas: HTMLCanvasElement = this.matrixCodeElement.nativeElement;
+    const ctx = canvas.getContext('2d')!;
+
+    canvas.width = window.innerWidth; // establish the width of the canvas to the width of the window
+    canvas.height = 50; // adjust the height of the canvas to the height of the window
+
+    ctx.fillStyle = '#000';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  }
+
+  constructor() {
+    window.addEventListener('resize', () => this.handleResize()); // listen event resize
   }
 }

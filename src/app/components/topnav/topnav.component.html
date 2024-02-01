@@ -1,9 +1,19 @@
-<div class="toolbar">
-  <mat-toolbar>
-    <button routerLink="/home" mat-button>Home</button>
-    <button routerLink="/aboutme" mat-button>About me</button>
-    <button routerLink="/projects" mat-button>Projects</button>
-    <button routerLink="/resume" mat-button>Resume</button>
-    <button routerLink="/contact" mat-button>Contact</button>
-  </mat-toolbar>
+<div class="mainToolbar">
+  <div class="toolbar">
+    <mat-toolbar>
+      <!-- <button routerLink="/home" mat-button>Home</button> -->
+      <button routerLink="/aboutme" mat-button>About me</button>
+      <button routerLink="/projects" mat-button>Projects</button>
+      <button routerLink="/resume" mat-button>Resume</button>
+      <button routerLink="/contact" mat-button>Contact</button>
+    </mat-toolbar>
+  </div>
+
+  <div class="clock">
+    <p>
+      {{ currentDay }}
+      {{ currentTime | date : "HH:mm:ss" }} MST,
+      {{ currentDate | date : "MM-dd-yyyy" }}
+    </p>
+  </div>
 </div>

@@ -27,7 +27,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { HeaderComponent } from './components/header/header.component';
+// import { HeaderComponent } from './components/header/header.component';
 import { MatrixEffectComponent } from './components/home/matrix-effect/matrix-effect.component';
 import { ResumeComponent } from './components/aboutme/resume/resume.component';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -43,7 +43,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
     SidenavComponent,
     TopnavComponent,
     CustomPipe,
-    HeaderComponent,
+    // HeaderComponent,
     MatrixEffectComponent,
     ResumeComponent
   ],
