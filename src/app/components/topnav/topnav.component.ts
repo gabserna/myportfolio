@@ -26,4 +26,8 @@ export class TopnavComponent implements OnInit {
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     return daysOfWeek[dayIndex];
   }
+
+  openLink(url: string) {
+    window.open(url, '_blank');
+  }
 }

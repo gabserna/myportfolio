@@ -46,3 +46,25 @@ svg {
   flex-direction: row;
   background-color: #001523;
 }
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 60rem;
+  position: fixed;
+}
+.social-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 1vh;
+  }
+  .social-button svg {
+    fill: #27fb6b;
+  }
+
+  /* svg:hover {
+    background-color: red;
+  } */
