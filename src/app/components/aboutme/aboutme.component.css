@@ -5,9 +5,9 @@
   user-select: none;
   -webkit-user-drag: none;
   padding: 1rem 3rem;
-  border-radius: 80px;
+  /* border-radius: 80px;
   border-bottom-left-radius: 0;
-  box-shadow: 0 0 10px 0 #27fb6b;
+  box-shadow: 0 0 10px 0 #27fb6b; */
   width: 80%;
   margin: 1rem auto;
 }

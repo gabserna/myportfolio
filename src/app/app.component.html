@@ -1,14 +1,17 @@
-<!-- <div>
-  <router-outlet></router-outlet>
-</div> -->
-
-<div class="container">
-  <!-- <app-matrix-effect></app-matrix-effect> -->
-  <!-- <app-header></app-header> -->
-  <app-topnav></app-topnav>
-  <!-- <app-sidenav></app-sidenav> -->
-  <app-aboutme></app-aboutme>
-  <app-projects></app-projects>
-  <app-resume></app-resume>
-  <app-contact></app-contact>
+<div class="toolbar">
+  <mat-toolbar>
+    <button mat-button><a href="#aboutme">Aboutme</a></button>
+    <button mat-button><a href="#projects">Projects</a></button>
+    <button mat-button><a href="#resume">Resume</a></button>
+    <button mat-button><a href="#contact">Contact</a></button>
+  </mat-toolbar>
 </div>
+
+<div class="container" #container> <app-topnav></app-topnav>
+  <section id="aboutme"><app-aboutme></app-aboutme></section>
+  <section id="projects"><app-projects></app-projects></section>
+  <section id="resume"><app-resume></app-resume></section>
+  <section id="contact"><app-contact></app-contact></section>
+</div>
+
+
