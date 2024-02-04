@@ -3,11 +3,12 @@ import { interval, fromEvent } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-matrix',
+  templateUrl: './matrix.component.html',
+  styleUrl: './matrix.component.css'
 })
-export class HomeComponent implements AfterViewInit {
+
+export class MatrixComponent implements AfterViewInit {
 
   @ViewChild('matrixCodeElement') matrixCodeElement!: ElementRef;
 
