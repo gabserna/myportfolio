@@ -1,21 +1,21 @@
-<div class="mainToolbar">
+<div class="main">
+  
   <div class="toolbar">
-    <mat-toolbar>
-      <!-- <button routerLink="/home" mat-button>Home</button> -->
-      <!-- <button routerLink="/aboutme" mat-button>About me</button>
-      <button routerLink="/projects" mat-button>Projects</button>
-      <button routerLink="/resume" mat-button>Resume</button>
-      <button routerLink="/contact" mat-button>Contact</button> -->
-    </mat-toolbar>
-  </div>
+    <div class="navbar" id="navbar">
+        <button mat-button><a href="#aboutme">About me</a></button>
+        <button mat-button><a href="#projects">Projects</a></button>
+        <button mat-button><a href="#resume">Resume</a></button>
+        <button mat-button><a href="#contact">Contact</a></button>
+    </div>
 
-  <!-- <div class="clock">
-    <p>
-      {{ currentDay }}
-      {{ currentTime | date : "HH:mm:ss" }} MST,
-      {{ currentDate | date : "MM-dd-yyyy" }}
-    </p>
-  </div> -->
+    <div class="clock">
+      <p>
+        {{ currentDay }}
+        {{ currentTime | date : "HH:mm:ss" }} MST,
+        {{ currentDate | date : "MM-dd-yyyy" }}
+      </p>
+    </div>
+  </div>
   
   <div class="social">
     <button class="social-button" (click)="openLink('https://github.com/gabserna')">
@@ -32,6 +32,10 @@
           <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
             <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
           </button>
+
+          <!-- <button mat-button><a href="#navbar">          
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-240v-368L296-464l-56-56 240-240 240 240-56 56-144-144v368h-80Z"/></svg></a>
+        </button> -->
         </div>
 
 </div>
