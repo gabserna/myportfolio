@@ -38,3 +38,11 @@ body {
   text-align: left !important;
   font-size: 2rem;
 }
+
+hr {
+  border: none;
+  height: 1px;
+  margin: 0;
+  background: linear-gradient(to right, transparent, #27fb6b, transparent);
+  margin: 0 15rem 0 15rem;
+}
