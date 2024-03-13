@@ -1,6 +1,6 @@
 @import "material-icons/iconfont/material-icons.css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,900;1,500;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,900;1,500;1,900&display=swap");
 
 * {
   user-select: none;
@@ -19,7 +19,6 @@ body {
   background-color: #001219;
   margin: 0;
 }
-
 
 .mainContainer {
   margin: 1rem 3rem;
@@ -44,5 +43,5 @@ hr {
   height: 1px;
   margin: 0;
   background: linear-gradient(to right, transparent, #27fb6b, transparent);
-  margin: 0 15rem 0 15rem;
+  margin: 5rem 15rem 5rem 15rem;
 }
