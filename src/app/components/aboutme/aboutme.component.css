@@ -1,16 +1,4 @@
-.aboutContainer {
-  margin: 1rem 3rem;
-  background-color: #001523;
-  color: #27fb6b;
-  user-select: none;
-  -webkit-user-drag: none;
-  padding: 1rem 3rem;
-  /* border-radius: 80px;
-  border-bottom-left-radius: 0;
-  box-shadow: 0 0 10px 0 #27fb6b; */
-  width: 80%;
-  margin: 1rem auto;
-}
+@import url("../../../styles.css");
 
 .about {
   display: flex;
@@ -25,13 +13,6 @@ section {
   padding: 1rem 3rem;
   line-height: 1.5;
   width: 55%;
-}
-
-#aws {
-  width: 5vw;
-  height: auto;
-  user-select: none !important;
-  -webkit-user-drag: none !important;
 }
 
 svg {
@@ -54,6 +35,11 @@ span {
   margin: 0.2rem;
   padding: 0.2rem;
   border: 2px solid #27fb6b;
+}
+
+span:hover {
+  background-color: #27fb6b;
+  color: #001219;
 }
 
 .skills {
