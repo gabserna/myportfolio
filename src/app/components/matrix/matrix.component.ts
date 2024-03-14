@@ -24,10 +24,8 @@ export class MatrixComponent implements AfterViewInit {
   private createMatrixEffect() {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     const columns = window.innerWidth / 10;
-    const rows = 30; // Número de filas
+    const rows = 30;
     const matrixCodeElement = this.matrixCodeElement.nativeElement;
-  
-    // Agrega un espacio al final de cada línea
     const space = ' ';
     const matrixWithSpace = Array.from({ length: columns }, () =>
       Array.from({ length: matrixCodeElement.clientHeight }, () =>

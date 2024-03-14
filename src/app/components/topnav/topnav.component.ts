@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topnav.component.css']
 })
 export class TopnavComponent implements OnInit {
-  currentDay: string = '';
+  currentDay = '';
   currentDate: Date = new Date();
   currentTime: Date = new Date();
 

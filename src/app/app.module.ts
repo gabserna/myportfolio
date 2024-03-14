@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 //modules here
 import { AppRoutingModule } from './modules/app-routing.module';
@@ -18,7 +17,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CustomPipe } from './custom.pipe';
 import { MaterialModule } from './modules/material.module';
 
-
 // components here
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -30,7 +28,6 @@ import { MatrixEffectComponent } from './components/matrix/matrix-effect/matrix-
 import { ResumeComponent } from './components/aboutme/resume/resume.component';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +38,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
     CustomPipe,
     MatrixComponent,
     MatrixEffectComponent,
-    ResumeComponent
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,10 +56,9 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
     MatDividerModule,
     MatSlideToggleModule,
     MaterialModule,
-    PdfViewerModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
 platformBrowserDynamic().bootstrapModule(AppModule);

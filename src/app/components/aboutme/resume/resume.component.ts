@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-// import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-resume',
