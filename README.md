@@ -21,18 +21,6 @@ must include: ...
 #  Demonstrate understanding of Observables by use Http Client or an RXJS Operator
 
 
-
-
-
-## Development server
-
-```
-clone repo
-npm install --legacy-peer-deps
-npm run buildprod
-```
-
-
 # solution!
 NOT SUPPORTED: keyword "id", use "$id" for schema ID
 
