@@ -24,8 +24,8 @@ button {
   color: #bbb !important;
 }
 
-#message {
-  height: 120px;
+textarea {
+  /* height: 120px; */
   resize: none;
 }
 

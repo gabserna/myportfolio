@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import {
-
-  FormBuilder,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { NotiflixService } from '../../services/notiflix.service';
+import { ContactForm } from './contact-form.model';
 
 @Component({
   selector: 'app-contact',
@@ -16,11 +11,7 @@ import { NotiflixService } from '../../services/notiflix.service';
 export class ContactComponent {
   contactForm!: FormGroup;
 
-  constructor(
-    private formBuilder: FormBuilder,
-    private httpclient: HttpClient,
-    private notiflixService: NotiflixService
-  ) {
+  constructor(private formBuilder: FormBuilder, private http: HttpClient) {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -30,25 +21,19 @@ export class ContactComponent {
 
   onSubmit(): void {
     if (this.contactForm.valid) {
-      const formData = this.contactForm.value;
-      console.log(formData);
+      const formData: ContactForm = this.contactForm.value;
+      this.sendEmail(formData);
     }
   }
 
-  sendEmail() {
-    this.notiflixService.loading('Sending...');
-    const params = {
-      name: this.contactForm.value.name,
-      email: this.contactForm.value.email,
-      message: this.contactForm.value.message,
-    };
-    console.log(params);
-    this.httpclient
-      .post('http://localhost:3000/sendEmail', params)
-      .subscribe((res) => {
-        console.log(res);
-        this.notiflixService.hideLoading(); // Use the provided method
-        this.notiflixService.notifySuccess('Email Sent Successfully');
-      });
+  sendEmail(formData: ContactForm): void {
+    this.http.post('https://formspree.io/f/xkndzdpb', formData).subscribe(
+      (response) => {
+        console.log('Email sent successfully:', response);
+      },
+      (error) => {
+        console.error('Error sending email:', error);
+      }
+    );
   }
 }
