@@ -18,11 +18,11 @@ export class MatrixEffectComponent implements AfterViewInit {
   private generateChars() {
     // Generate Unicode character arrays for different character sets
     const utf8Chars = this.genUnicode(0x0020, 0x007e);
-    const katakana = this.genUnicode(0x30A1, 0x30F6);
+    // const katakana = this.genUnicode(0x30A1, 0x30F6);
+    // const hindiDevanagari = this.genUnicode(0x0900, 0x097f);
+    // const chineseHan = this.genUnicode(0x4e00, 0x9fff);
     const hiragana = this.genUnicode(0x3041, 0x3096);
     const cirilic = this.genUnicode(0x0400, 0x04ff);
-    const hindiDevanagari = this.genUnicode(0x0900, 0x097f);
-    const chineseHan = this.genUnicode(0x4e00, 0x9fff);
 
     // Concatenate character sets into a single array
     this.chars = utf8Chars.concat(cirilic, hiragana);
@@ -44,6 +44,7 @@ export class MatrixEffectComponent implements AfterViewInit {
 
   private createMatrixEffect() {
     const canvas: HTMLCanvasElement = this.matrixCodeElement.nativeElement;
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const ctx = canvas.getContext('2d')!;
 
     this.handleResize();
@@ -54,7 +55,7 @@ export class MatrixEffectComponent implements AfterViewInit {
     const cols = Math.floor(canvas.width / 20 ) + 1;
     const ypos = Array(cols).fill(0); // Initialize an array to store the vertical position of each column
 
-    console.log('Altura del lienzo:', canvas.height);
+    // console.log('Altura del lienzo:', canvas.height);
 
     ctx.fillStyle = '#000';
     ctx.fillRect(0, 0, canvas.width, canvas.height); // Fill the canvas with a black background
@@ -81,6 +82,7 @@ export class MatrixEffectComponent implements AfterViewInit {
 
   private handleResize() {
     const canvas: HTMLCanvasElement = this.matrixCodeElement.nativeElement;
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const ctx = canvas.getContext('2d')!;
 
     canvas.width = window.innerWidth; // establish the width of the canvas to the width of the window
