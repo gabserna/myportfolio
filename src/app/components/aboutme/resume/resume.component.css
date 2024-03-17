@@ -4,11 +4,13 @@ resume {
     
 }
 h1 {
-  text-align: center;
-  font-weight: bolder;
-  font-style: italic;
   margin-left: 2rem;
-  font-size: 2rem;
+  font-weight: bolder;
+  margin: 1rem 0 1rem 0;
+  color: #27fb6b;
+  text-align: left !important;
+  font-size: 2.5rem;
+  font-style: italic;
 }
 .interested {
   margin: 5rem 0 5rem 0;
