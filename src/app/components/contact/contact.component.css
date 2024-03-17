@@ -44,3 +44,10 @@ section {
 mat-form-field {
   width: 100%;
 }
+
+.success-message {
+  color: #27fb6b;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}

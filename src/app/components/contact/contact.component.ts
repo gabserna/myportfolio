@@ -10,6 +10,7 @@ import { ContactForm } from './contact-form.model';
 })
 export class ContactComponent {
   contactForm!: FormGroup;
+  messageSent: boolean = false;
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) {
     this.contactForm = this.formBuilder.group({
@@ -30,6 +31,8 @@ export class ContactComponent {
     this.http.post('https://formspree.io/f/xkndzdpb', formData).subscribe(
       (response) => {
         console.log('Email sent successfully:', response);
+        this.messageSent = true;
+        this.contactForm.reset();
       },
       (error) => {
         console.error('Error sending email:', error);
