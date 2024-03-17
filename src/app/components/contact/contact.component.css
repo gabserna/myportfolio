@@ -19,6 +19,11 @@ form {
   box-shadow: 0px 0px 10px 0px #27fb6b;
 }
 
+form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 10px 0px #27fb6b;
+}
+
 button {
   background-color: #001523 !important;
   color: #bbb !important;
