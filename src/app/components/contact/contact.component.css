@@ -25,8 +25,8 @@ form:hover {
 }
 
 button {
-  background-color: #001523 !important;
-  color: #bbb !important;
+  background-color: #1b3343 !important;
+  color: #27fb6b !important;
 }
 
 textarea {
@@ -39,4 +39,8 @@ section {
   flex-direction: column;
   align-items: flex-start;
   margin: 2rem 2rem;
+}
+
+mat-form-field {
+  width: 100%;
 }
