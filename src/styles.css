@@ -6,6 +6,8 @@
 * {
   user-select: none;
   -webkit-user-drag: none;
+  /* scrollbar-color: #27fb6b #001523; */
+  scrollbar-width: none;
 }
 
 .container {
@@ -22,7 +24,9 @@ body {
 }
 
 .mainContainer {
-  margin: 1rem 3rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  /* margin-bottom: 3rem; */
   padding: 1rem 3rem;
   background-color: #001523;
   color: #27fb6b;
@@ -54,3 +58,4 @@ h1, h2 {
   text-align: left !important;
   font-size: 1.5rem;
 }
+

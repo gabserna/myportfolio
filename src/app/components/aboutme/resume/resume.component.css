@@ -10,6 +10,12 @@ h1 {
   margin-left: 2rem;
   font-size: 2rem;
 }
+.interested {
+  margin: 5rem 0 5rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #bbbbbb;
+}
 
 section {
   display: flex;
@@ -20,8 +26,8 @@ section {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #27fb6b;
 }
 a:hover {
-    color: #27fb6b;
+    color: #bbbbbb;
 }

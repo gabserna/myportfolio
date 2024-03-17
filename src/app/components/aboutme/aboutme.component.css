@@ -42,11 +42,15 @@ span:hover {
   color: #001219;
 }
 
-.skills {
+.skills, .hobbies {
   width: auto;
   max-height: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.hobbies {
+  width: 180%;
 }

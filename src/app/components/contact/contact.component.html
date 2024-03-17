@@ -1,12 +1,10 @@
 <div class="mainContainer container">
   <h1 class="animate__animated animate__slideInDown header">Let's talk!</h1>
   <section>
-    <h2>Feel free to reach out to me with any questions or comments.
-      <br>
-      I will get back to you as soon as possible.
-    </h2>
-
-
+    <div class='sup'>
+      <p>Feel free to reach out to me with any questions or comments</p>
+      <p>I will get back to you as soon as possible.</p>
+    </div>
 
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" target="_blank" action="https://formspree.io/f/xkndzdpb"
       method="POST">
@@ -39,7 +37,7 @@
       <input type="text" name="_honey" style="display:none">
       <input type="hidden" name="_captcha" value="false">
       <button mat-raised-button color="primary" type="submit" [disabled]="contactForm.invalid">Submit</button>
-      
+
       <div *ngIf="messageSent" class="success-message">
         Your message has been sent successfully!
       </div>
