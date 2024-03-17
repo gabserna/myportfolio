@@ -41,8 +41,16 @@ body {
 
 hr {
   border: none;
-  height: 1px;
+  height: 0.5px;
   margin: 0;
   background: linear-gradient(to right, transparent, #27fb6b, transparent);
-  margin: 5rem 15rem 5rem 15rem;
+  margin: 1rem 30rem 1rem 30rem;
+}
+
+h1, h2 {
+  font-weight: bolder;
+  margin: 1rem 0 0.5rem 0;
+  color: #27fb6b;
+  text-align: left !important;
+  font-size: 1.5rem;
 }
