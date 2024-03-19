@@ -14,6 +14,7 @@
   user-select: none;
   -webkit-user-drag: none;
   /* scrollbar-color: #27fb6b #001523; */
+  font-family: "Red Hat Display", sans-serif;
   scrollbar-width: none;
 }
 
@@ -23,7 +24,7 @@
 
 html,
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
   height: 100%;
   width: 100%;
   background-color: #001219;
