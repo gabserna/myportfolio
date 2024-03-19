@@ -21,9 +21,6 @@ must include: ...
 #  Demonstrate understanding of Observables by use Http Client or an RXJS Operator
 
 
-# solution!
-NOT SUPPORTED: keyword "id", use "$id" for schema ID
-
 ```
 npm cache clean --force
 use: npx npkill to delete /node_modules
