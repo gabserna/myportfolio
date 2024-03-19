@@ -2,6 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,900;1,500;1,900&display=swap");
 @import '~animate.css/animate.css';
 
+:root {
+  --green: #40cf8e;
+  --green2: #27fb6b;
+  --text-color: #bbbbbb;
+  --white-color: #ededed;
+  --black-color: #131313;
+}
 
 * {
   user-select: none;
