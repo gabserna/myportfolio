@@ -10,9 +10,10 @@ import { ContactForm } from './contact-form.model';
 })
 export class ContactComponent {
   contactForm!: FormGroup;
-  messageSent: boolean = false;
+  messageSent: boolean;
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) {
+    this.messageSent = false;
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],

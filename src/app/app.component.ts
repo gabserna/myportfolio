@@ -1,11 +1,11 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'myportfolio';
 
   @ViewChild('container', { read: ElementRef }) container!: ElementRef; // Use ViewChild for the container
@@ -24,11 +24,11 @@ export class AppComponent {
   scrollToComponent(component: string): void {
     const element = this.components[component]?.nativeElement;
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest',
+      });
     }
   }
-
-  
-
-
 }

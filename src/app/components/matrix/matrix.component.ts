@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { interval, fromEvent } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -24,7 +25,7 @@ export class MatrixComponent implements AfterViewInit {
   private createMatrixEffect() {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     const columns = window.innerWidth / 10;
-    const rows = 30;
+    // const rows = 30;
     const matrixCodeElement = this.matrixCodeElement.nativeElement;
     const space = ' ';
     const matrixWithSpace = Array.from({ length: columns }, () =>
