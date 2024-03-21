@@ -17,6 +17,14 @@ h1 {
   text-align: center;
   font-size: 1.2rem;
   color: #bbbbbb;
+  
+  .resume {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
 }
 
 section {

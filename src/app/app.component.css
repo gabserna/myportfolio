@@ -1,3 +1,10 @@
 app-matrix-effect {
-    height: 20rem;
+  height: 20rem;
+}
+
+#aboutme,
+#projects,
+#resume,
+#contact {
+  padding-top: 2rem;
 }
